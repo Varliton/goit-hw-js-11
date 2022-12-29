@@ -8,6 +8,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
+    margin: 0;
   padding-bottom: 50px;
 }
 
@@ -37,13 +38,16 @@ body {
   height: 36px;
   min-width: 250px;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
+  border-radius: 4px;
 }
 
 .submit {
-  height: 36px;
-  width: 36px;
+  height: 38px;
+  width: 38px;
   border: none;
+  border-radius: 4px;
+  margin-left: 13px;
 }
 
 .load-more-div {
@@ -55,7 +59,7 @@ body {
   width: 300px;
   border-radius: 50px;
 
-  background-color: #12d212;
+  background-color: skyblue;
   color: #ffffff;
   cursor: pointer;
 
