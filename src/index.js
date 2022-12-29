@@ -1,5 +1,6 @@
 import { Notify } from 'notiflix';
-import SimpleLightbox from 'simplelightbox';
+import simpleLightbox from 'simpleLightbox';
+import "simplelightbox/dist/simple-lightbox.min.css";
 import debounce from 'lodash.debounce';
 import throttle from 'lodash.throttle';
 import { ImagesApiService } from './js/api-service';
@@ -37,7 +38,7 @@ async function onSearch(e) {
   await imagesApiService
     .fetchImages()
     .then(appendGalleryMarkup)
-    .then((lightbox = new SimpleLightbox('.gallery a', {})))
+    .then((lightbox = new simpleLightbox('.gallery a', {})))
     .catch(error => console.log(error));
 
   if (imagesApiService.maxPages === 0) {
@@ -85,7 +86,7 @@ async function onScroll() {
     imagesApiService
       .fetchImages()
       .then(appendGalleryMarkup)
-      .then((lightbox = new SimpleLightbox('.gallery a', {})))
+      .then((lightbox = new simpleLightbox('.gallery a', {})))
       .then(
         throttle(
           Notify.warning(
