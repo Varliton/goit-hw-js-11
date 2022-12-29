@@ -1,5 +1,5 @@
 import { Notify } from 'notiflix';
-import simpleLightbox from 'simpleLightbox';
+import SimpleLightbox from 'simplelightbox';
 import "simplelightbox/dist/simple-lightbox.min.css";
 import debounce from 'lodash.debounce';
 import throttle from 'lodash.throttle';
