@@ -43,7 +43,7 @@ async function onSearch(e) {
     .catch(error => console.log(error));
 
   if (imagesApiService.maxPages === 0) {
-    return Notiflix.Notify.failure(
+    return Notify.failure(
       'Sorry, there are no images matching your search query. Please try again. Click here to close'
     );
   }
