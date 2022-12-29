@@ -1,5 +1,6 @@
 import { Notify } from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 import debounce from 'lodash.debounce';
 import throttle from 'lodash.throttle';
 import { ImagesApiService } from './js/api-service';
