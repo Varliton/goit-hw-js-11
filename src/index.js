@@ -5,8 +5,7 @@ import throttle from 'lodash.throttle';
 import { ImagesApiService } from './js/api-service';
 import renderGallery from './js/markup';
 import getRefs from './js/get-refs';
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
+
 
 const refs = getRefs();
 
