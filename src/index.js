@@ -1,5 +1,5 @@
 import { Notify } from 'notiflix';
-
+import SimpleLightbox from 'simplelightbox';
 import debounce from 'lodash.debounce';
 import throttle from 'lodash.throttle';
 import { ImagesApiService } from './js/api-service';
